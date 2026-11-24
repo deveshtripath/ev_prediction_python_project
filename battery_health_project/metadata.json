@@ -1,0 +1,51 @@
+{
+    "project": "EV Battery Health Prediction Using Machine Learning",
+    "dataset": "XJTU-2024",
+    "target": "SOH",
+    "nominal_capacity_ah": 2.0,
+    "features": [
+        "cycle",
+        "charge_ah",
+        "charge_ah_reported",
+        "v_max",
+        "v_min",
+        "duration_s"
+    ],
+    "models": [
+        "Linear Regression",
+        "SVR",
+        "XGBoost",
+        "Random Forest"
+    ],
+    "best_model": "Random Forest",
+    "evaluation_metrics": [
+        {
+            "Rank": 1,
+            "Model": "Random Forest",
+            "MAE": 0.45341355687768786,
+            "RMSE": 1.1594559495263879,
+            "R2 Score": 0.9443948166878678
+        },
+        {
+            "Rank": 2,
+            "Model": "XGBoost",
+            "MAE": 0.5682068330214622,
+            "RMSE": 1.3355860082339344,
+            "R2 Score": 0.9262179884586245
+        },
+        {
+            "Rank": 3,
+            "Model": "SVR",
+            "MAE": 0.72142227948668,
+            "RMSE": 1.7513998586625106,
+            "R2 Score": 0.87312460988087
+        },
+        {
+            "Rank": 4,
+            "Model": "Linear Regression",
+            "MAE": 1.4483540970584385,
+            "RMSE": 1.9943202289605069,
+            "R2 Score": 0.8354883876284267
+        }
+    ]
+}
